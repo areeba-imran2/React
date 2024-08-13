@@ -1,4 +1,9 @@
-.App {
+ .navbar {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -36,3 +41,7 @@
     transform: rotate(360deg);
   }
 }
+
+.blank{
+  color:crimson;
+} */
