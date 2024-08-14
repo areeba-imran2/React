@@ -3,6 +3,40 @@
   padding-right: 50px;
 }
 
+.red{
+   color :white;
+   background-color: brown;
+   height : 200px;
+   width:300px;
+   display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  border-radius: 10px;
+}
+
 /* .App {
   text-align: center;
 }
@@ -45,3 +79,4 @@
 .blank{
   color:crimson;
 } */
+
