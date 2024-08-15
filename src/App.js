@@ -8,9 +8,17 @@ import { HandleFormSubmit } from "./MyComponents/handleEventsbtn";
 import { HandleClick } from "./MyComponents/handleClick";
 import { handleMouseOver } from "./MyComponents/handleMouseOver";
 import { handleKeyPress } from "./MyComponents/handleKeyPress";
-import {Greeting} from "./MyComponents/Greeting";
-import {teranaryOperators} from "./MyComponents/ternary0perators";
-import {WarningBanner} from "./MyComponents/WarningBanner";
+import { Greeting } from "./MyComponents/Greeting";
+import { teranaryOperators } from "./MyComponents/ternary0perators";
+import { WarningBanner } from "./MyComponents/WarningBanner";
+import { FruitList } from "./Mycomponent2/fruitList";
+import { PersonList } from "./Mycomponent2/personList";
+import { EmployeeList } from "./Mycomponent2/employeeList";
+import { ProductList } from "./Mycomponent2/productList";
+import { StudentList } from "./Mycomponent2/studentList";
+import { NameForm } from "./Mycomponent2/nameForm";
+import {ColorForm} from "./Mycomponent2/colorForm";
+import {CheckboxForm} from "./Mycomponent2/checkboxform";
 function App() {
   // const handleChange=(e)=>{
   //   setName(e.target.value)
@@ -58,18 +66,46 @@ function App() {
       <div>
         <Greeting isLoggedIn={true} />
       </div>
-      <br/>
+      <br />
       <div>
-      <teranaryOperators isSignIn={false} />
-    </div>
+        <teranaryOperators isSignIn={false} />
+      </div>
 
-    <div>
-      {showWarning && <WarningBanner warn={showWarning} />}
-      <button onClick={() => setShowWarning(!showWarning)}>
-        {showWarning ? 'Hide' : 'Show'} Warning
-      </button>
-    </div>
+      <div>
+        {showWarning && <WarningBanner warn={showWarning} />}
+        <button onClick={() => setShowWarning(!showWarning)}>
+          {showWarning ? "Hide" : "Show"} Warning
+        </button>
+      </div>
 
+      {/* // Task 4 */}
+      <div>
+        <h2>Example 1: Simple List with Div</h2>
+        <FruitList />
+      </div>
+
+      <div>
+        <h2>Example 2: Objects with Unique Keys</h2>
+        <PersonList />
+      </div>
+      <div>
+        <h4>Employee List example </h4>
+        <EmployeeList />
+      </div>
+      <div>
+        <h2>Example 1: Filtered Products (In Stock)</h2>
+        <ProductList />
+      </div>
+      <div>
+        <StudentList />
+      </div>
+      <br/>
+      <NameForm />
+      <br/>
+      <ColorForm/>
+      <br/>
+      <CheckboxForm/>
+      <br/>
     </>
   );
 }
